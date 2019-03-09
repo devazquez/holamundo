@@ -2,6 +2,9 @@
   #app
     .logoTexto FCiencias
     img(id='escudo' :src ='fcescudo')
+    .pruebaContenedor 
+      .cosa1.left.unamGoldColor Cosa1
+      .cosa2.left.unamGoldColor.bold Cosa2
 
     div {{ this.mensaje }}
     div.delay.isClosed(:class="showMsg") {{ this.respuesta }}
@@ -24,6 +27,9 @@
 </script>
 
 <style  lang="scss" >
+  //styles 
+  $goldUnam:#c5911e;
+
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -52,10 +58,25 @@
       transform: translate(-50%,-50%);
       border-radius: 0px;
     }
+    .pruebaContenedor{
+      width: 90%;
+      border: 1px solid #193455;
+      .unamGoldColor.bold{
+        font-weight: 900;
+      }
+      .unamGoldColor{
+        color:$goldUnam;
+      &.bold{
+        font-weight: 600;
+      }
+      
+      }
+    }
     #escudo{
       width:150px;
       height:auto;
     }
+  
 
 
   }
