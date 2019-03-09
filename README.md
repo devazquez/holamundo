@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # holamundo2
 
 > A Vue.js project example
@@ -28,3 +29,7 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# holamundo
+Proyecto de prueba vuejs, clase de diseño de interfaces
+>>>>>>> 990993f7878ba0f10c844b4fedee335cf0e67652
