@@ -2,18 +2,18 @@
   #app
     .logoTexto FCiencias
     img(id='escudo' :src ='fcescudo')
-    .pruebaContenedor 
+    .pruebaContenedor
       .cosa1.left.unamGoldColor Cosa1
       .cosa2.left.unamGoldColor.bold Cosa2
 
     div {{ this.mensaje }}
     div.delay.isClosed(:class="showMsg") {{ this.respuesta }}
-    //router-view
+    router-view
 </template>
 
 <script>
   import imageLogo from '@/assets/fcescudo.png'
-
+  
   export default {
     name: 'App',
     data: function () {
@@ -27,7 +27,7 @@
 </script>
 
 <style  lang="scss" >
-  //styles 
+  //styles
   $goldUnam:#c5911e;
 
   #app {
@@ -69,14 +69,14 @@
       &.bold{
         font-weight: 600;
       }
-      
+
       }
     }
     #escudo{
       width:150px;
       height:auto;
     }
-  
+
 
 
   }

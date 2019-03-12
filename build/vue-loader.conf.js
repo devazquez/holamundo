@@ -11,6 +11,8 @@ module.exports = {
     sourceMap: sourceMapEnabled,
     extract: isProduction
   }),
+  scss: 'vue-style-loader!css-loader!sass-loader', // Allows you to use <style lang="scss"> in scoped CSS.
+  sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
   cssSourceMap: sourceMapEnabled,
   cacheBusting: config.dev.cacheBusting,
   transformToRequire: {
