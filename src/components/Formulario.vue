@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Formulario',
+  name: 'formulario',
   data () {
     return {
       msg: 'Formulario'
